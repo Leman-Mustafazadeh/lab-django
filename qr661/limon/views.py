@@ -27,4 +27,3 @@ def categories(request,name,age):
 def pageNotFound(request,exception):
         return HttpResponseNotFound('<h1>Sehife tapilmadi</h1>')
 
-# Create your views here.
