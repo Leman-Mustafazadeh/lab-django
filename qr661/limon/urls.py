@@ -15,5 +15,6 @@ urlpatterns = [
     re_path(r'^user/(?P<username>\w+)/$', views.user, name='user'),
     re_path(r'^user/$', views.user, name='user_list'),
     path('category/', views.categories, kwargs={"name": "laman", "age": 21}, name='categories'),
+     path('index1/', views.index1)
 ]
 
