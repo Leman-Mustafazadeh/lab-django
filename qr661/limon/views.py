@@ -13,30 +13,22 @@ from django.http import HttpResponse, HttpResponseNotFound
 
 
 def index1(request):
-    
     data = {"n": 5}
     return render(request, "index1.html", context=data)
-
 
 def main(request):
     return HttpResponse("<h1>Esas sehife</h1>")
 
-
 def about(request):
     return render(request,"limon/about.html")
 
-
 def contact(request):
     return HttpResponse("<h2>elaqe</h2>")
+# def archive(request, year):
+#     return HttpResponse(f'<h2>Arxivb</h2><p>{year}</p>')
 
-
-def archive(request, year):
-    return HttpResponse(f'<h2>Arxivb</h2><p>{year}</p>')
-
-
-def user(request, username="Undefined", age=0):
-    return HttpResponse(f'<h2>Username -- {username} Age -- {age}</h2>')
-
+# def user(request, username="Undefined", age=0):
+#     return HttpResponse(f'<h2>Username -- {username} Age -- {age}</h2>')
 
 def categories(request, name, age):
     return HttpResponse(f"""
